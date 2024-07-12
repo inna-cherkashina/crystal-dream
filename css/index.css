@@ -1,0 +1,114 @@
+@import url('./../fonts/DINPro.css');
+
+.letters {
+  cursor: pointer;
+  width: 500px;
+  height: 100px;
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font-family: "DINPro", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+@keyframes anim-letter {
+  0% {
+    bottom: 0px;
+    text-shadow: black 0px 0px 0px, black 0px 0px 0px;
+  }
+
+  50% {
+    bottom: 0px;
+    text-shadow: black 1px 0px 0px, black -1px 0px 0px;
+  }
+
+}
+
+.letter-elem {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0px;
+  font-family: "DINPro", sans-serif;
+}
+
+.elem-1 {
+  animation: anim-letter 0.8s ease 0s both;
+  -webkit-animation: anim-letter 0.8s ease 0s both;
+  left: 0px;
+
+}
+
+.elem-2 {
+  animation: anim-letter 0.8s ease 0.2s both;
+  -webkit-animation: anim-letter 0.8s ease 0.2s both;
+  left: 20px;
+}
+
+.elem-3 {
+  animation: anim-letter 0.8s ease 0.4s both;
+  -webkit-animation: anim-letter 0.8s ease 0.4s both;
+  left: 40px;
+}
+
+.elem-4 {
+  animation: anim-letter 0.8s ease 0.6s both;
+  -webkit-animation: anim-letter 0.8s ease 0.6s both;
+  left: 60px;
+}
+
+.elem-5 {
+  animation: anim-letter 0.8s ease 0.8s both;
+  -webkit-animation: anim-letter 0.8s ease 0.8s both;
+  left: 80px;
+}
+
+.elem-6 {
+  animation: anim-letter 0.8s ease 1s both;
+  -webkit-animation: anim-letter 0.8s ease 1s both;
+  left: 100px;
+}
+
+.elem-7 {
+  animation: anim-letter 0.8s ease 1.2s both;
+  -webkit-animation: anim-letter 0.8s ease 1.2s both;
+  left: 120px;
+}
+
+.elem-8 {
+  animation: anim-letter 0.8s ease 1.4s both;
+  -webkit-animation: anim-letter 0.8s ease 1.4s both;
+  left: 140px;
+}
+
+.elem-9 {
+  animation: anim-letter 0.8s ease 1.6s both;
+  -webkit-animation: anim-letter 0.8s ease 1.6s both;
+  left: 160px;
+}
+
+.elem-10 {
+  animation: anim-letter 0.8s ease 1.8s both;
+  -webkit-animation: anim-letter 0.8s ease 1.8s both;
+  left: 180px;
+}
+
+.elem-11 {
+  animation: anim-letter 0.8s ease 2s both;
+  -webkit-animation: anim-letter 0.8s ease 2s both;
+  left: 200px;
+}
+
+.elem-12 {
+  animation: anim-letter 0.8s ease 2.2s both;
+  -webkit-animation: anim-letter 0.8s ease 2.2s both;
+  left: 220px;
+}
+
+.elem-13 {
+  animation: anim-letter 0.8s ease 2.4s both;
+  -webkit-animation: anim-letter 0.8s ease 2.4s both;
+  left: 240px;
+}
