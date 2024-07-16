@@ -1,0 +1,38 @@
+.crystal-dream__bunner-container {
+  background: url('../images/bunner.jpg');
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.crystal-dream__logo {
+  width: 380px;
+  height: auto;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  padding: 31px 0px 0px 0px;
+  display: block;
+}
+
+.crystal-dream__video-container {
+  margin: 113px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.crystal-dream__video-container video{
+  width: 455px;
+  height: 270px; 
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px; 
+}
+
+.crystal-dream__title {}
+
+.crystal-dream__data {}
+
+.crystal-dream__city {}

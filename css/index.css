@@ -1,114 +1,72 @@
-@import url('./../fonts/DINPro.css');
+@import url('../fonts/DINPro.css');
+@import url('01-video-section.css');
 
-.letters {
-  cursor: pointer;
-  width: 500px;
-  height: 100px;
-  margin: 0px auto;
+
+
+:root {
+  --main-color: #60C3D8;
+  --other-color: #EF786F;
+  --border-color: #E3E3E3;
+  --bg-color-1: #F5F5F5;
+  --bg-color-2: #C6C6C6;
+
+  --fw-family: "DINPro", Arial, Helvetica, sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --fsz-little: 16px;
+  --fsz-little-plus: 18px;
+  --fsz-medium: 24px;
+  --fsz-medium-plus: 34px;
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
   position: relative;
+}
+
+section {
+  width: 100%;
+  height: auto;
+
+}
+
+.center {
+  width: 1266px;
+  margin: 0px auto;
+}
+
+h1,
+h2 {
+  font-size: 63px;
+  font-family: var(--fw-family);
+}
+
+.title__container {
   display: flex;
-  align-items: flex-end;
-  font-family: "DINPro", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  margin: 120px 0px 55px 0px;
 }
 
-
-@keyframes anim-letter {
-  0% {
-    bottom: 0px;
-    text-shadow: black 0px 0px 0px, black 0px 0px 0px;
-  }
-
-  50% {
-    bottom: 0px;
-    text-shadow: black 1px 0px 0px, black -1px 0px 0px;
-  }
-
-}
-
-.letter-elem {
-  font-size: 30px;
-  position: absolute;
-  bottom: 0px;
-  font-family: "DINPro", sans-serif;
-}
-
-.elem-1 {
-  animation: anim-letter 0.8s ease 0s both;
-  -webkit-animation: anim-letter 0.8s ease 0s both;
-  left: 0px;
-
-}
-
-.elem-2 {
-  animation: anim-letter 0.8s ease 0.2s both;
-  -webkit-animation: anim-letter 0.8s ease 0.2s both;
-  left: 20px;
-}
-
-.elem-3 {
-  animation: anim-letter 0.8s ease 0.4s both;
-  -webkit-animation: anim-letter 0.8s ease 0.4s both;
-  left: 40px;
-}
-
-.elem-4 {
-  animation: anim-letter 0.8s ease 0.6s both;
-  -webkit-animation: anim-letter 0.8s ease 0.6s both;
-  left: 60px;
-}
-
-.elem-5 {
-  animation: anim-letter 0.8s ease 0.8s both;
-  -webkit-animation: anim-letter 0.8s ease 0.8s both;
-  left: 80px;
-}
-
-.elem-6 {
-  animation: anim-letter 0.8s ease 1s both;
-  -webkit-animation: anim-letter 0.8s ease 1s both;
-  left: 100px;
-}
-
-.elem-7 {
-  animation: anim-letter 0.8s ease 1.2s both;
-  -webkit-animation: anim-letter 0.8s ease 1.2s both;
-  left: 120px;
-}
-
-.elem-8 {
-  animation: anim-letter 0.8s ease 1.4s both;
-  -webkit-animation: anim-letter 0.8s ease 1.4s both;
-  left: 140px;
-}
-
-.elem-9 {
-  animation: anim-letter 0.8s ease 1.6s both;
-  -webkit-animation: anim-letter 0.8s ease 1.6s both;
-  left: 160px;
-}
-
-.elem-10 {
-  animation: anim-letter 0.8s ease 1.8s both;
-  -webkit-animation: anim-letter 0.8s ease 1.8s both;
-  left: 180px;
-}
-
-.elem-11 {
-  animation: anim-letter 0.8s ease 2s both;
-  -webkit-animation: anim-letter 0.8s ease 2s both;
-  left: 200px;
-}
-
-.elem-12 {
-  animation: anim-letter 0.8s ease 2.2s both;
-  -webkit-animation: anim-letter 0.8s ease 2.2s both;
-  left: 220px;
-}
-
-.elem-13 {
-  animation: anim-letter 0.8s ease 2.4s both;
-  -webkit-animation: anim-letter 0.8s ease 2.4s both;
-  left: 240px;
+.title-text {
+  font-size: var(--fsz-little);
+  font-family: var(--fw-family);
+  font-weight: var(--fw-medium);
 }
