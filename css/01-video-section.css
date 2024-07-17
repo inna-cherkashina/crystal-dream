@@ -3,6 +3,8 @@
   width: 100%;
   height: auto;
   background-size: cover;
+  border-radius: 0px 0px 30px 30px;
+  padding: 0px 0px 65px 0px;
 }
 
 .crystal-dream__logo {
@@ -19,20 +21,12 @@
   margin: 113px 0px 0px 0px;
   display: flex;
   justify-content: center;
+  margin: 114px auto;
 }
 
-.crystal-dream__video-container video{
-  width: 455px;
-  height: 270px; 
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px; 
+
+.cristal-title,
+.cristal-data,
+.cristal-city {
+  color: #fff;
 }
-
-.crystal-dream__title {}
-
-.crystal-dream__data {}
-
-.crystal-dream__city {}

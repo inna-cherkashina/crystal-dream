@@ -15,19 +15,32 @@
   <header>
     <section class="crystal-dream__bunner-container">
       <img src="images/icons/logo.svg" class="crystal-dream__logo"></img>
-      <div class="crystal-dream__video-container">
-        <video src="" poster="images/video-poster-dream.jpg"></video>
+      <div class="video__container crystal-dream__video-container">
+        <video poster="images/video-poster-dream.jpg">
+          <source src="media/Dream-promo.mp4" type="video/mp4">
+          <source src="media/Dream-promo.webm" type="video/webm">
+          Ваш браузер не поддерживает тег <code>video</code>.
+        </video>
+        <div class="btn-video video-play"></div>
       </div>
-      <h1 class="crystal-dream__title"></h1>
-      <div class="crystal-dream__data"></div>
-      <div class="crystal-dream__city"></div>
+      <div class="title-container">
+        <h1 class="title-container__title cristal-title">
+          Crystal Dream
+        </h1>
+        <div class="title-description__container">
+          <div class="title-container__data cristal-data">16-18 октября</div>
+          <div class="title-container__city cristal-city">Турция, Каппадокия</div>
+        </div>
+
+      </div>
+
     </section>
   </header>
   <main>
 
   </main>
   <footer></footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
