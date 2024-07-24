@@ -1,6 +1,12 @@
 @import url('../fonts/DINPro.css');
 @import url('01-video-section.css');
-
+@import url('02-meet-in-turkey.css');
+@import url('03-what-do-you-wait.css');
+@import url('04-we-meet-in.css');
+@import url('05-our-programm.css');
+@import url('06-our-spiker.css');
+@import url('07-guide.css');
+@import url('08-footer.css');
 
 
 :root {
@@ -9,7 +15,6 @@
   --border-color: #E3E3E3;
   --bg-color-1: #F5F5F5;
   --bg-color-2: #C6C6C6;
-
   --fw-family: "DINPro", Arial, Helvetica, sans-serif;
   --fw-light: 200;
   --fw-regular: 400;
@@ -19,7 +24,7 @@
   --fsz-little: 16px;
   --fsz-little-plus: 18px;
   --fsz-medium: 24px;
-  --fsz-medium-plus: 34px;
+  --fsz-medium-plus: 32px;
   --fsz-big-plus: 63px;
 
 }
@@ -44,12 +49,18 @@ a {
 section {
   width: 100%;
   height: auto;
-
 }
 
 .center {
-  width: 1266px;
+  max-width: 1266px;
   margin: 0px auto;
+}
+
+@media (max-width: 550px) {
+  .center {
+    width: 100%;
+    padding: 0px 20px;
+  }
 }
 
 h1,
@@ -57,7 +68,6 @@ h2 {
   font-size: 63px;
   font-family: var(--fw-family);
 }
-
 
 .title-container {
   display: flex;
@@ -69,6 +79,7 @@ h2 {
   font-size: var(--fsz-big-plus);
   font-weight: var(--fw-bold);
   line-height: 50px;
+  text-align: center;
 }
 
 .title-description__container {
@@ -82,24 +93,26 @@ h2 {
 .title-container__data {
   font-size: var(--fsz-little-plus);
   font-weight: var(--fw-medium);
-
 }
 
 .title-container__city {
   font-size: var(--fsz-little-plus);
   font-weight: var(--fw-medium);
+}
 
+.crystal-dream__video-container {
+  display: flex;
+  justify-content: center;
+  margin: 114px auto;
 }
 
 .video__container {
   position: relative;
   width: 455px;
   height: 270px;
-
 }
 
 .video__container video {
-
   width: 455px;
   height: 270px;
   object-fit: cover;
@@ -108,7 +121,6 @@ h2 {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-
 }
 
 
@@ -137,4 +149,63 @@ h2 {
   width: 56px;
   height: 34px;
   background-size: cover;
+}
+
+@media (max-width: 550px) {
+  .video__container {
+    width: 100%;
+    height: 220px;
+  }
+
+  .video__container video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  .video-play {
+    background: url('../../images/icons/play-mobile.svg');
+    width: 50px;
+    height: 30px;
+    top: calc(220px / 2 - 14px);
+    right: calc(100% / 2 - 50px / 2);
+  }
+
+  .video-pause {
+    background: url('../../images/icons/pause-mobile.svg');
+    top: 240px;
+    right: calc(100% / 2 - 50px / 2);
+    width: 50px;
+    height: 30px;
+    background-size: cover;
+  }
+
+  .crystal-dream__video-container {
+    margin: 170px auto;
+  }
+
+  .title-container__title {
+    font-size: var(--fsz-medium-plus);
+    font-weight: var(--fw-bold);
+    line-height: 25px;
+  }
+
+  .title-description__container {
+    margin: 24px 0px 0px 0px;
+  }
+
+  .title-container__city {
+    font-size: var(--fsz-little-plus);
+    font-weight: var(--fw-medium);
+  }
+
+  .title-container__data {
+    font-size: var(--fsz-little-plus);
+    font-weight: var(--fw-medium);
+  }
 }

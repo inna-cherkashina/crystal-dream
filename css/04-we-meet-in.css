@@ -1,0 +1,227 @@
+.we-meet-in__section {
+    position: relative;
+    background: url('../images/balloons-yellow.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 120px 0px 150px 0px;
+}
+
+.turkey-of-heart {
+    width: 100%;
+    background-size: cover;
+    padding: 120px 0px 0px 0px;
+}
+
+.turkey-of-heart--mobile {
+    display: none;
+}
+
+.line-scroll--mobile {
+    display: none;
+}
+
+.circle-scroll--mobile {
+    display: none;
+}
+
+.turkey-title__container {
+    background: var(--other-color);
+    padding: 62px 0px 70px 0px;
+
+}
+
+.turkey-of-heart__img-container {
+    margin: 0px 0px 140px 0px;
+    background-position-x: center;
+    background: url('./../images/img-3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 1500px;
+    align-items: center;
+    position: relative;
+}
+
+.we-meet-in__second-elem {
+    height: 205px;
+}
+
+
+@media (max-width: 1000px) {
+    .turkey-of-heart__description-flexbox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .line-scroll {
+        left: 50px;
+    }
+
+    .turkey-of-heart__description-flexbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .first-elem {
+        height: 412px;
+        margin: 0px;
+    }
+
+    .turkey-of-heart__text {
+        width: 472px;
+    }
+}
+
+@media (max-width: 692px) {
+    .turkey-of-heart__img-container--mobile .center {
+        padding: 0px 30px 0px 0px;
+    }
+
+    .turkey-of-heart__flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 120px 0px 0px 0px;
+    }
+
+    .turkey-of-heart {
+        display: none;
+    }
+
+    .line-scroll {
+        display: none;
+    }
+
+    .circle-scroll {
+        display: none;
+    }
+
+    .turkey-of-heart__description-flexbox {
+        margin: 0px 0px 0px 0px;
+        gap: 50px;
+    }
+
+    .turkey-of-heart__img-container--mobile {
+        position: relative;
+    }
+
+    .turkey-of-heart--mobile {
+        display: block;
+        margin: 55px 0px 0px 0px;
+    }
+
+    .turkey-of-heart__text {
+        width: 100%;
+        max-height: none;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: none;
+        padding: 0px;
+        gap: 25px;
+
+    }
+
+    .turkey-of-heart__text p {
+        color: black;
+        font-size: var(--fsz-little-plus);
+    }
+
+    .turkey-of-heart__text img {
+        display: block;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        object-fit: cover;
+        height: 345px;
+    }
+
+    .second-elem {
+        height: auto;
+    }
+
+    .first-elem {
+        height: auto;
+    }
+
+    .linear-gradient__line {
+        margin: 50px auto 65px auto;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, rgb(96, 195, 216), rgb(96, 195, 216, 0.23), rgb(9, 98, 133, 0.43), rgb(239, 120, 111, 0.67), rgb(232, 65, 59));
+    }
+
+    .line-scroll--mobile {
+        display: block;
+        position: relative;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to top, rgb(96, 195, 216), rgb(96, 195, 216), rgb(9, 98, 133), rgb(239, 120, 111), rgb(232, 65, 59));
+        left: 27px;
+        top: 0px;
+    }
+
+    .circle-scroll--mobile {
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: sticky;
+        top: calc(100%/2);
+        transform: translateX(-11px);
+        fill: #ed6961;
+        transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+        -webkit-transform: translateX(-11px);
+        -moz-transform: translateX(-11px);
+        -ms-transform: translateX(-11px);
+        -o-transform: translateX(-11px);
+    }
+
+    .circle-scroll--color-one {
+        fill: #256582;
+        transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+    }
+
+    .circle-scroll--color-two {
+        fill: #60c3d8;
+        transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .turkey-of-heart__text img {
+        display: block;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        object-fit: cover;
+        height: 307px;
+    }
+
+    .turkey-of-heart__flex-container {
+        margin: 55px 0px 0px 0px;
+    }
+
+    .turkey-of-heart__description-flexbox {
+        margin: 0px 0px 0px 0px;
+        gap: 50px;
+    }
+
+}

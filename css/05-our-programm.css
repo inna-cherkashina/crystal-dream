@@ -1,0 +1,147 @@
+.programm__section {}
+
+.programm-title__container {
+    padding: 120px 0px 0px 0px;
+}
+
+.programm-title__container .title__container {
+    color: #096285;
+    text-align: center;
+}
+
+.programm-card__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 65px 0px 0px 0px;
+    gap: 30px;
+}
+
+.programm-card__box {
+    width: 402px;
+    height: 471px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.one-card {
+    background: url('../images/programm-1.jpg');
+    background-size: cover;
+}
+
+.two-card {
+    background: url('../images/programm-2.jpg');
+    background-size: cover;
+}
+
+.three-card {
+    background: url('../images/programm-3.jpg');
+    background-size: cover;
+}
+
+.programm-card__text-box {
+    background: rgb(109, 126, 123, 0.5);
+    backdrop-filter: blur(10px);
+    font-size: var(--fsz-little);
+    font-weight: var(--fw-medium);
+    font-family: var(--fw-family);
+    color: #ffffff;
+    padding: 30px;
+    height: 205px;
+}
+
+@media (max-width: 1300px) {
+    .programm-card__container {
+        flex-wrap: wrap;
+        padding: 0px 30px;
+    }
+
+    .programm-card__box {
+        width: 48%;
+        height: 471px;
+    }
+
+    .one-card,
+    .two-card,
+    .three-card {
+        background-position-y: -140px;
+    }
+
+    .programm-card__text-box {
+        height: 175px;
+    }
+
+}
+
+@media(max-width: 1200px) {
+
+    .programm-card__text-box {
+        height: 200px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .programm-card__text-box {
+        height: 200px;
+    }
+
+    .three-card {
+        background-position-y: -454px;
+        flex-grow: 1;
+    }
+
+    .three-card .programm-card__text-box {
+        height: 130px;
+    }
+}
+
+@media(max-width: 900px) {
+    .programm-card__box {
+        width: 100%;
+        height: 471px;
+    }
+
+    .programm-card__text-box {
+        height: auto !important;
+    }
+
+    .three-card {
+        background-position-y: -140px;
+        flex-grow: 1;
+    }
+
+    .programm-title__container {
+        background: #ffffff;
+        padding: 80px 0px 0px 0px;
+    }
+
+    .programm-title__container .title__container {
+        color: #000000;
+        text-align: center;
+    }
+}
+
+@media(max-width: 690px) {
+
+    .one-card,
+    .two-card {
+        background-position-y: -60px;
+    }
+
+    .three-card {
+        background-position-y: 0px;
+    }
+
+    .programm-card__text-box {
+        font-size: var(--fsz-little-plus);
+
+    }
+}

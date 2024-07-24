@@ -1,0 +1,50 @@
+.what-do-you-wait__section {
+    padding: 120px 0px 0px 0px;
+    background: url(../images/wings.png);
+    background-size: cover;
+    background-position-y: -980px;
+}
+
+.what-do-you-wait-title {
+    color: #096285;
+}
+
+.icons__container {
+    margin: 55px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 747px;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+
+.icon__box {
+    background: #F5F5F5;
+    width: 220px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+
+.icon-title {
+    font-size: var(--fsz-little-plus);
+    font-weight: var(--fw-medium);
+    text-align: center;
+}
+
+.what-do-you-wait__container {
+    margin: 120px 0px 55px 0px;
+}
+
+.what-do-you-wait-city {
+    color: #096285;
+}
