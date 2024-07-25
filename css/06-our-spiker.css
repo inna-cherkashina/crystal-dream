@@ -13,13 +13,13 @@
 }
 
 .our-spiker-title {
-    color: #096285;
+    color: var(--main-color-dark);
 
 }
 
 .our-spiker__section .our-spiker-text {
     max-width: 1050px;
-    color: #096285;
+    color: var(--main-color-dark);
     font-size: 45px;
     text-align: center;
 }

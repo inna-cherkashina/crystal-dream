@@ -6,7 +6,7 @@
 }
 
 .what-do-you-wait-title {
-    color: #096285;
+    color: var(--main-color-dark);
 }
 
 .icons__container {
@@ -20,7 +20,7 @@
 
 
 .icon__box {
-    background: #F5F5F5;
+    background: var(--bg-color-1);
     width: 220px;
     padding: 30px;
     display: flex;
@@ -46,5 +46,5 @@
 }
 
 .what-do-you-wait-city {
-    color: #096285;
+    color: #000;
 }

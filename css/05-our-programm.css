@@ -5,7 +5,7 @@
 }
 
 .programm-title__container .title__container {
-    color: #096285;
+    color: var(--main-color-dark);
     text-align: center;
 }
 

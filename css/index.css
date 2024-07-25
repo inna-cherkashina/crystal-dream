@@ -11,6 +11,7 @@
 
 :root {
   --main-color: #60C3D8;
+  --main-color-dark: #096285;
   --other-color: #EF786F;
   --border-color: #E3E3E3;
   --bg-color-1: #F5F5F5;
@@ -88,6 +89,13 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+
+}
+
+.title-text {
+  text-align: center;
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-medium);
 }
 
 .title-container__data {
