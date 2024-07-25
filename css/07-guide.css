@@ -147,12 +147,20 @@
     margin: 0px 0px 25px 0px;
 }
 
-.guide-contacts__text a {
+.guide-contacts__text .guide-phone {
     text-decoration: none;
+}
+
+.guide-contacts__text a,
+.guide-contacts__text p {
     color: black;
     font-family: var(--fw-family);
     font-size: var(--fsz-little);
     font-weight: var(--fw-bold);
+}
+
+.guide-contacts__text a {
+    text-decoration: underline;
 }
 
 .guide-contacts__text:last-child {

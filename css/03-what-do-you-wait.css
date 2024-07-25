@@ -1,8 +1,10 @@
 .what-do-you-wait__section {
-    padding: 120px 0px 0px 0px;
+    padding: 120px 0px 55px 0px;
     background: url(../images/wings.png);
     background-size: cover;
     background-position-y: -980px;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .what-do-you-wait-title {
@@ -42,7 +44,7 @@
 }
 
 .what-do-you-wait__container {
-    margin: 120px 0px 55px 0px;
+    margin: 120px 0px 0px 0px;
 }
 
 .what-do-you-wait-city {
