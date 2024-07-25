@@ -67,18 +67,17 @@ $(document).ready(function () {
 });
 
 //TODO Аккордион Start
-let accordeons = document.querySelectorAll('.accordion-item');
+let accordeons = document.querySelectorAll('.accordion-header');
 accordeons.forEach(function (accord) {
   accord.addEventListener('click', function (elem) {
-
     let action = elem.target;
-    let currentAccordElem = action.closest('.accordion-item');//определяем текущий бокс
+    let currentAccordElem = action.closest('.accordion-header');//определяем текущий бокс
     let currentContent = action.nextElementSibling; // находим скрытый контент
     currentAccordElem.classList.toggle("active"); //присваиваем основному контейнеру флаг активности   
     if (currentAccordElem.classList.contains("active")) {
       currentContent.style.maxHeight = currentContent.scrollHeight + "px";
       //Обратить внимание чтоб стили были присвоены классу .accordion-collapse
-
+      reachGoal('camp_2024_accord', { block: currentAccordElem.innerText });
     }
     else {
       currentContent.style.maxHeight = 0;
