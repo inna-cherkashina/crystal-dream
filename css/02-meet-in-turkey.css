@@ -7,19 +7,18 @@
     padding: 120px 0px 150px 0px;
 }
 
-.title-container .meet-in-turkey-title {
+.meet-in-turkey__section .meet-in-turkey-title {
     color: #fff;
     line-height: 75px;
-
 }
 
-.turkey-of-heart {
+.meet-in-turkey {
     width: 100%;
     background-size: cover;
     padding: 120px 0px 0px 0px;
 }
 
-.turkey-of-heart--mobile {
+.meet-in-turkey--mobile {
     display: none;
 }
 
@@ -31,13 +30,7 @@
     display: none;
 }
 
-.turkey-title__container {
-    background: var(--other-color);
-    padding: 62px 0px 70px 0px;
-
-}
-
-.turkey-of-heart__img-container {
+.meet-in-turkey__img-container {
     margin: 0px 0px 140px 0px;
     background-position-x: center;
     background: url('./../images/img-3.webp');
@@ -50,18 +43,19 @@
 }
 
 .turkey-title__container .title__container {
-    color: #ffffff;
+    color: var(--main-color-dark);
     text-align: center;
+
 }
 
-.turkey-of-heart__description-flexbox {
+.meet-in-turkey__description-flexbox {
     display: flex;
     justify-content: center;
     margin: 320px 0px 0px 0px;
     gap: 186px;
 }
 
-.turkey-of-heart__text {
+.meet-in-turkey__text {
     background: rgb(109, 126, 123, 0.5);
     backdrop-filter: blur(10px);
     width: 400px;
@@ -80,7 +74,7 @@
     font-family: var(--fw-family);
 }
 
-.turkey-of-heart__text p {
+.meet-in-turkey__text p {
     color: #ffffff;
 }
 
@@ -129,23 +123,26 @@
     -o-border-radius: 100px;
 }
 
+.--one,
+.--two,
+.--three {
+    right: -10px;
+}
+
 .--one {
     top: 0px;
-    right: -10px;
 }
 
 .--two {
     top: calc(680px / 2);
-    right: -10px;
 }
 
 .--three {
-    top: 665px;
-    right: -10px;
+    top: 99%;
 }
 
 @media (max-width: 1000px) {
-    .turkey-of-heart__description-flexbox {
+    .meet-in-turkey__description-flexbox {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -153,12 +150,14 @@
 
     .line-scroll {
         left: 50px;
+        top: 547px;
     }
 
-    .turkey-of-heart__description-flexbox {
+    .meet-in-turkey__description-flexbox {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 140px 0px 0px 0px;
         gap: 50px;
     }
 
@@ -167,23 +166,37 @@
         margin: 0px;
     }
 
-    .turkey-of-heart__text {
+    .meet-in-turkey__text {
         width: 472px;
     }
 }
 
 @media (max-width: 692px) {
-    .turkey-of-heart__img-container--mobile .center {
+
+    .turkey-title__container .title__container {
+        margin: 60px 0px 60px 0px;
+    }
+
+    .meet-in-turkey__img-container--mobile .center {
         padding: 0px 30px 0px 0px;
     }
 
-    .turkey-of-heart__flex-container {
+    .meet-in-turkey__flex-container {
         display: flex;
         justify-content: space-between;
-        margin: 120px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
-    .turkey-of-heart {
+    .flex-left {
+        width: 70px;
+        position: relative;
+    }
+
+    .flex-rigth {
+        width: 86%;
+    }
+
+    .meet-in-turkey__section {
         display: none;
     }
 
@@ -195,36 +208,34 @@
         display: none;
     }
 
-    .turkey-of-heart__description-flexbox {
+    .meet-in-turkey__description-flexbox {
         margin: 0px 0px 0px 0px;
-        gap: 50px;
+        gap: 25px;
     }
 
-    .turkey-of-heart__img-container--mobile {
+    .meet-in-turkey__img-container--mobile {
         position: relative;
     }
 
-    .turkey-of-heart--mobile {
+    .meet-in-turkey--mobile {
         display: block;
-        margin: 55px 0px 0px 0px;
     }
 
-    .turkey-of-heart__text {
-        width: 100%;
+    .meet-in-turkey__text {
         max-height: none;
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: none;
         padding: 0px;
         gap: 25px;
-
+        width: 100%;
     }
 
-    .turkey-of-heart__text p {
+    .meet-in-turkey__text p {
         color: black;
         font-size: var(--fsz-little-plus);
     }
 
-    .turkey-of-heart__text img {
+    .meet-in-turkey__text img {
         display: block;
         border-radius: 25px;
         -webkit-border-radius: 25px;
@@ -243,20 +254,13 @@
         height: auto;
     }
 
-    .linear-gradient__line {
-        margin: 50px auto 65px auto;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, rgb(96, 195, 216), rgb(96, 195, 216, 0.23), rgb(9, 98, 133, 0.43), rgb(239, 120, 111, 0.67), rgb(232, 65, 59));
-    }
-
     .line-scroll--mobile {
         display: block;
         position: relative;
         width: 2px;
         height: 100%;
-        background: linear-gradient(to top, rgb(96, 195, 216), rgb(96, 195, 216), rgb(9, 98, 133), rgb(239, 120, 111), rgb(232, 65, 59));
-        left: 27px;
+        background: linear-gradient(to top, #BED5F7, #8CBDFF, #4892F1, #3B7CD8, #BED5F7);
+        left: 50px;
         top: 0px;
     }
 
@@ -265,9 +269,10 @@
         width: 25px;
         height: 25px;
         position: sticky;
+        z-index: 100;
         top: calc(100%/2);
         transform: translateX(-11px);
-        fill: #ed6961;
+        fill: #63A1F6;
         transition: 0.3s ease all;
         -webkit-transition: 0.3s ease all;
         -moz-transition: 0.3s ease all;
@@ -279,28 +284,57 @@
         -o-transform: translateX(-11px);
     }
 
-    .circle-scroll--color-one {
-        fill: #256582;
-        transition: 0.3s ease all;
-        -webkit-transition: 0.3s ease all;
-        -moz-transition: 0.3s ease all;
-        -ms-transition: 0.3s ease all;
-        -o-transition: 0.3s ease all;
+    .circle-mini-mobile {
+        width: 14px;
+        height: 14px;
+        background: #BED5F7;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
     }
 
-    .circle-scroll--color-two {
-        fill: #60c3d8;
-        transition: 0.3s ease all;
-        -webkit-transition: 0.3s ease all;
-        -moz-transition: 0.3s ease all;
-        -ms-transition: 0.3s ease all;
-        -o-transition: 0.3s ease all;
+    .--one,
+    .--two,
+    .--three {
+        position: absolute;
+        right: -6px
     }
+
+    .--one {
+        top: 0px;
+    }
+
+    .--two {
+        top: calc(1185px / 2);
+    }
+
 
 }
 
+@media (max-width: 545px) {
+    .line-scroll--mobile {
+        left: 30px;
+    }
+}
+
 @media (max-width: 500px) {
-    .turkey-of-heart__text img {
+    .flex-left {
+        width: 30px;
+        position: relative;
+    }
+
+    .line-scroll--mobile {
+        left: 30px;
+        top: -66px;
+    }
+
+    .meet-in-turkey__img-container--mobile .center {
+        padding: 0px 0px 0px 30px;
+    }
+
+    .meet-in-turkey__text img {
         display: block;
         border-radius: 25px;
         -webkit-border-radius: 25px;
@@ -311,13 +345,22 @@
         height: 307px;
     }
 
-    .turkey-of-heart__flex-container {
-        margin: 55px 0px 0px 0px;
+    .meet-in-turkey__flex-container {
+        margin: 128px 0px 0px 0px;
+        justify-content: flex-start;
     }
 
-    .turkey-of-heart__description-flexbox {
+    .meet-in-turkey__description-flexbox {
         margin: 0px 0px 0px 0px;
         gap: 50px;
+    }
+
+    .--one {
+        top: 0px;
+    }
+
+    .--two {
+        top: calc(1400px / 2);
     }
 
 }

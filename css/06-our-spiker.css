@@ -3,9 +3,14 @@
 
 }
 
+.our-spiker__section .video__container {
+    margin: 55px auto 34px auto;
+}
+
 .our-spiker__slider-container {
     position: relative;
     z-index: 100;
+    margin: 63px 0px 0px 0px;
 }
 
 .our-spiker__container {
@@ -20,6 +25,7 @@
 .our-spiker__section .our-spiker-text {
     max-width: 1050px;
     color: var(--main-color-dark);
+    font-weight: var(--fw-bold);
     font-size: 45px;
     text-align: center;
 }
@@ -93,6 +99,24 @@
 
 .slick-next--disactive {
     visibility: hidden;
+}
+
+@media (max-width: 550px) {
+    .our-spiker__section .our-spiker-text {
+        font-size: 24px;
+    }
+
+    .our-spiker__section {
+        padding: 65px 0px 0px 0px;
+    }
+
+    .our-spiker__section .video__container {
+        margin: 0px auto 34px auto;
+    }
+
+    .our-spiker__container {
+        margin: 0px 0px 55px 0px;
+    }
 }
 
 @media (max-width: 500px) {

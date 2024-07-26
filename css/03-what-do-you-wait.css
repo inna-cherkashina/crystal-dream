@@ -1,9 +1,8 @@
 .what-do-you-wait__section {
     padding: 120px 0px 55px 0px;
-    background: url(../images/wings.png);
+    background: url("../images/wings.svg");
     background-size: cover;
-    background-position-y: -980px;
-    background-position-x: center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -36,6 +35,10 @@
     -o-border-radius: 35px;
 }
 
+.icon__box img {
+    display: block;
+}
+
 
 .icon-title {
     font-size: var(--fsz-little-plus);
@@ -49,4 +52,64 @@
 
 .what-do-you-wait-city {
     color: #000;
+}
+
+@media (max-width: 755px) {
+    .icons__container {
+        width: 94%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .what-do-you-wait__section {
+        padding: 65px 0px 0px 0px;
+        background: none;
+    }
+
+    .what-do-you-wait__container {
+        margin: 65px 0px 0px 0px;
+    }
+
+    .icons__container {
+        margin: 55px auto 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+
+    .icon__box img {
+        display: block;
+        width: 74px;
+    }
+
+    .icon-title {
+        font-size: var(--fsz-little);
+        font-weight: var(--fw-medium);
+        text-align: center;
+    }
+
+    .icon__box {
+        background: var(--bg-color-1);
+        width: 150px;
+        padding: 20px 9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 355px) {
+    .icon__box {
+        width: 140px;
+    }
 }

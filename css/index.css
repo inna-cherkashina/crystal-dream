@@ -57,6 +57,12 @@ section {
   margin: 0px auto;
 }
 
+@media (max-width: 1266px) {
+  .center {
+    width: 100%;
+  }
+}
+
 @media (max-width: 550px) {
   .center {
     width: 100%;
@@ -194,13 +200,13 @@ h2 {
   }
 
   .crystal-dream__video-container {
-    margin: 170px auto;
+    margin: 25% auto;
   }
 
   .title-container__title {
     font-size: var(--fsz-medium-plus);
     font-weight: var(--fw-bold);
-    line-height: 25px;
+    line-height: 35px;
   }
 
   .title-description__container {
@@ -215,5 +221,6 @@ h2 {
   .title-container__data {
     font-size: var(--fsz-little-plus);
     font-weight: var(--fw-medium);
+    text-align: center;
   }
 }
