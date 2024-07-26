@@ -183,7 +183,7 @@ h2 {
   }
 
   .video-play {
-    background: url('../../images/icons/play-mobile.svg');
+    background: url('./../images/icons/play-mobile.svg');
     width: 50px;
     height: 30px;
     top: calc(220px / 2 - 14px);
@@ -191,7 +191,7 @@ h2 {
   }
 
   .video-pause {
-    background: url('../../images/icons/pause-mobile.svg');
+    background: url('./../images/icons/pause-mobile.svg');
     top: 240px;
     right: calc(100% / 2 - 50px / 2);
     width: 50px;
