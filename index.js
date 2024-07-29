@@ -8,26 +8,46 @@ buttonsVideo.forEach((buttonVideo) => {
       if (buttonVideo.dataset.video == videoElem.dataset.video) {
         if (videoElem.paused) {
           videoElem.play();
-          buttonVideo.classList.add('video-pause');
-          buttonVideo.classList.remove('video-play');
+          videoPlay(buttonVideo);
         } else {
           videoElem.pause();
-          buttonVideo.classList.remove('video-pause');
-          buttonVideo.classList.add('video-play');
+          videoPause(buttonVideo);
         }
       }
     })
   });
 });
 videoElements.forEach((videoElem) => {
+  videoElem.addEventListener('click', function () {
+    buttonsVideo.forEach((buttonVideo) => {
+      if (buttonVideo.dataset.video == videoElem.dataset.video) {
+        if (videoElem.paused) {
+          videoElem.play();
+          videoPlay(buttonVideo);
+        } else {
+          videoElem.pause();
+          videoPause(buttonVideo);
+        }
+      }
+    })
+  })
+
   videoElem.addEventListener('ended', function () {
     buttonsVideo.forEach((buttonVideo) => {
       buttonVideo.currentTime = 0;
-      buttonVideo.classList.remove('video-pause');
-      buttonVideo.classList.add('video-play');
+      videoPause(buttonVideo);
     })
   }, false);
 });
+
+function videoPlay(element) {
+  element.classList.add('video-pause');
+  element.classList.remove('video-play');
+}
+function videoPause(element) {
+  element.classList.remove('video-pause');
+  element.classList.add('video-play');
+}
 //~ Запуск видеоплеера End
 
 //! Слайдер Start

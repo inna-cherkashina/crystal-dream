@@ -145,12 +145,10 @@
 @media(max-width: 690px) {
 
     .one-card,
-    .two-card {
-        background-position-y: -60px;
-    }
-
+    .two-card,
     .three-card {
         background-position-y: 0px;
+        background-repeat: no-repeat;
     }
 
     .programm-card__text-box {
